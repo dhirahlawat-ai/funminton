@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your ultimate guide to everything badminton – strategies, history, rules, gear, and news.">
+    <title>Funmintom - Your Ultimate Badminton Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h2>Funmintom</h2>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#strategies" class="nav__link">Strategies</a></li>
+                <li class="nav__item"><a href="#history" class="nav__link">History</a></li>
+                <li class="nav__item"><a href="#rules" class="nav__link">Rules</a></li>
+                <li class="nav__item"><a href="#equipment" class="nav__link">Equipment</a></li>
+                <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+                <li class="nav__item"><a href="#news" class="nav__link">News</a></li>
+                <li class="nav__item">
+                    <button class="btn btn--primary btn--sm" id="search-toggle">Search</button>
+                </li>
+            </ul>
+            <div class="nav__toggle" id="nav-toggle">☰</div>
+        </nav>
+    </header>
+
+    <!-- Search Modal -->
+    <div class="modal hidden" id="search-modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3>Search Funmintom</h3>
+                <button class="modal__close" id="search-close">&times;</button>
+            </div>
+            <div class="modal__body">
+                <input type="text" class="form-control" id="search-input" placeholder="Search for strategies, equipment, rules...">
+                <div class="search-results" id="search-results"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">Welcome to Funmintom</h1>
+                <p class="hero__tagline">Your ultimate guide to everything badminton – strategies, history, rules, gear, and news.</p>
+                <div class="hero__cta">
+                    <a href="#strategies" class="btn btn--primary btn--lg">Explore Strategies</a>
+                    <a href="#equipment" class="btn btn--outline btn--lg">View Equipment Guide</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Navigation Cards -->
+    <section class="quick-nav">
+        <div class="container">
+            <h2>Explore Our Sections</h2>
+            <div class="quick-nav__grid">
+                <div class="quick-nav__card">
+                    <h3>🏸 Strategies</h3>
+                    <p>Master singles, doubles, and defensive play techniques</p>
+                    <a href="#strategies" class="btn btn--secondary">Learn More</a>
+                </div>
+                <div class="quick-nav__card">
+                    <h3>📚 History</h3>
+                    <p>Discover badminton's evolution and legendary players</p>
+                    <a href="#history" class="btn btn--secondary">Learn More</a>
+                </div>
+                <div class="quick-nav__card">
+                    <h3>📋 Rules</h3>
+                    <p>Complete guide to badminton rules and scoring</p>
+                    <a href="#rules" class="btn btn--secondary">Learn More</a>
+                </div>
+                <div class="quick-nav__card">
+                    <h3>🎯 Equipment</h3>
+                    <p>In-depth gear guides and buying recommendations</p>
+                    <a href="#equipment" class="btn btn--secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategies Section -->
+    <section class="section" id="strategies">
+        <div class="container">
+            <h2 class="section__title">Badminton Strategies</h2>
+            <p class="section__subtitle">Master your game with proven techniques and tactical approaches</p>
+            
+            <div class="strategy-tabs">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="singles">Singles Strategy</button>
+                    <button class="tab-btn" data-tab="doubles">Doubles Strategy</button>
+                    <button class="tab-btn" data-tab="defensive">Defensive Play</button>
+                </div>
+                
+                <div class="tab-content active" id="singles">
+                    <h3>Singles Strategy</h3>
+                    <div class="strategy-grid">
+                        <div class="strategy-card">
+                            <h4>Court Coverage</h4>
+                            <p>In singles, players must cover the entire court alone. Maintain central base position and use split-step technique for efficient movement.</p>
+                        </div>
+                        <div class="strategy-card">
+                            <h4>Attacking Backhand</h4>
+                            <p>Most players have weaker backhands. Exploit this by consistently targeting your opponent's backhand corner.</p>
+                        </div>
+                        <div class="strategy-card">
+                            <h4>Four Corners Movement</h4>
+                            <p>Move your opponent to all four corners using long diagonals (up to 7.5 meters) to tire them out and create gaps.</p>
+                        </div>
+                        <div class="strategy-card">
+                            <h4>High Serves</h4>
+                            <p>Use deep, high serves to push opponents to the back court, creating space for subsequent attacks.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="doubles">
+                    <h3>Doubles Strategy</h3>
+                    <div class="strategy-grid">
+                        <div class="strategy-card">
+                            <h4>Formation Play</h4>
+                            <p>Master both offensive (front/back) and defensive (side by side) formations. Rotate seamlessly based on shuttle position.</p>
+                        </div>
+                        <div class="strategy-card">
+                            <h4>Attack Conversion</h4>
+                            <p>Always try to keep the attack and convert opponent's attacks to defense. Keep shuttles low and focus on drives.</p>
+                        </div>
+                        <div class="strategy-card">
+                            <h4>Placement Strategy</h4>
+                            <p>Place shuttles between opponents to cause confusion and indecision. Target the gap between front and back players.</p>
+                        </div>
+                        <div class="strategy-card">
+                            <h4>Service Returns</h4>
+                            <p>Vary your serves between low and flick serves. Low serves are preferable as they're harder to attack.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="defensive">
+                    <h3>Defensive Strategy</h3>
+                    <div class="strategy-grid">
+                        <div class="strategy-card">
+                            <h4>Ready Position</h4>
+                            <p>Keep low center of gravity, neutral grip, and racket head pointing down for explosive split steps.</p>
+                        </div>
+                        <div class="strategy-card">
+                            <h4>Smash Defense</h4>
+                            <p>Focus on high clears or flat drives rather than half-court lifts. Use cross blocks to redirect smashes.</p>
+                        </div>
+                        <div class="strategy-card">
+                            <h4>Quality Over Quantity</h4>
+                            <p>Make every defensive shot count. Turn defensive positions into counter-attacks when possible.</p>
+                        </div>
+                        <div class="strategy-card">
+                            <h4>Patience</h4>
+                            <p>Outlast opponents through long rallies. Force them to make errors by consistently returning shots.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="section section--alt" id="history">
+        <div class="container">
+            <h2 class="section__title">Badminton History</h2>
+            <p class="section__subtitle">Journey through the evolution of badminton from ancient times to Olympic sport</p>
+            
+            <div class="history-content">
+                <div class="timeline">
+                    <h3>Historical Timeline</h3>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Ancient Times (2000+ years ago)</h4>
+                            <p>Games like 'battledore and shuttlecock' played in China, India, and Greece using paddles to keep shuttlecock aloft.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>1850s</h4>
+                            <p>British military officers in Pune, India adapt local game 'Poona' by adding a net to divide the court.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>1873</h4>
+                            <p>Duke of Beaufort introduces the sport at Badminton House in Gloucestershire, England. Game gets its modern name.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>1893</h4>
+                            <p>Badminton Association of England (BAE) formed, publishing first official set of rules.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>1992</h4>
+                            <p>Badminton becomes official Olympic sport at Barcelona Games.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legends">
+                    <h3>Legendary Players</h3>
+                    <div class="legends-grid">
+                        <div class="legend-card">
+                            <h4>Lin Dan 🇨🇳</h4>
+                            <p>2x Olympic champion, 5x World Champion, 6x All-England Champion. Only player to complete 'Super Grand Slam'.</p>
+                        </div>
+                        <div class="legend-card">
+                            <h4>Lee Chong Wei 🇲🇾</h4>
+                            <p>3x Olympic silver medalist (2008, 2012, 2016). Held world No. 1 ranking for 199 weeks.</p>
+                        </div>
+                        <div class="legend-card">
+                            <h4>PV Sindhu 🇮🇳</h4>
+                            <p>2x Olympic medalist, 5x World Championships medalist including 2019 gold. First Indian woman to win Olympic badminton medal.</p>
+                        </div>
+                        <div class="legend-card">
+                            <h4>Taufik Hidayat 🇮🇩</h4>
+                            <p>Olympic champion (2004), known for powerful backhand and graceful playing style. Won 27 career titles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules Section -->
+    <section class="section" id="rules">
+        <div class="container">
+            <h2 class="section__title">Badminton Rules</h2>
+            <p class="section__subtitle">Complete guide to badminton rules, scoring, and court specifications</p>
+            
+            <div class="rules-grid">
+                <div class="rule-card">
+                    <h3>🏆 Scoring System</h3>
+                    <h4>Rally Point System (21 points)</h4>
+                    <ul>
+                        <li>Match consists of best of 3 games</li>
+                        <li>First to 21 points wins a game</li>
+                        <li>Point scored on every rally regardless of who serves</li>
+                        <li>At 20-20, must win by 2 clear points</li>
+                        <li>At 29-29, first to 30 points wins</li>
+                        <li>Winner of game serves first in next game</li>
+                    </ul>
+                </div>
+                
+                <div class="rule-card">
+                    <h3>🏟️ Court Dimensions</h3>
+                    <ul>
+                        <li>Length: 13.4m (44 feet) for both singles and doubles</li>
+                        <li>Width: 6.1m (20 feet) for doubles, 5.18m (17 feet) for singles</li>
+                        <li>Net height: 1.52m (5 feet) at center, 1.55m (5'1") at posts</li>
+                        <li>Service courts: 6.5 feet from net to short service line</li>
+                    </ul>
+                </div>
+                
+                <div class="rule-card">
+                    <h3>🎾 Service Rules</h3>
+                    <ul>
+                        <li>Serve must be hit below waist level (1.15m from ground)</li>
+                        <li>Racket head must point downward when hitting shuttle</li>
+                        <li>Serve in upward motion in one continuous movement</li>
+                        <li>Both feet must remain stationary until serve is delivered</li>
+                        <li>Serve diagonally to opponent's service court</li>
+                    </ul>
+                </div>
+                
+                <div class="rule-card">
+                    <h3>❌ Common Faults</h3>
+                    <ul>
+                        <li>Shuttle lands outside court boundaries</li>
+                        <li>Shuttle fails to pass over net</li>
+                        <li>Player touches net with racket or body</li>
+                        <li>Double hit of shuttle on same side</li>
+                        <li>Service faults (too high, delayed, improper grip)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section class="section section--alt" id="equipment">
+        <div class="container">
+            <h2 class="section__title">Equipment Guide</h2>
+            <p class="section__subtitle">Comprehensive gear guides and buying recommendations for all skill levels</p>
+            
+            <div class="equipment-filters">
+                <button class="filter-btn active" data-filter="all">All Equipment</button>
+                <button class="filter-btn" data-filter="rackets">Rackets</button>
+                <button class="filter-btn" data-filter="shuttlecocks">Shuttlecocks</button>
+                <button class="filter-btn" data-filter="shoes">Shoes</button>
+            </div>
+            
+            <div class="equipment-content">
+                <div class="equipment-category" data-category="rackets">
+                    <h3>🏸 Rackets</h3>
+                    <div class="weight-guide">
+                        <h4>Weight Classification Guide</h4>
+                        <div class="weight-grid">
+                            <div class="weight-card">
+                                <h5>2U (90-94g)</h5>
+                                <p>Attacking Singles - Most power but less maneuverability</p>
+                            </div>
+                            <div class="weight-card">
+                                <h5>3U (85-89g)</h5>
+                                <p>Singles/Attacking Doubles - Great for aggressive play</p>
+                            </div>
+                            <div class="weight-card">
+                                <h5>4U (80-84g)</h5>
+                                <p>Optimal for most players - Good balance of speed and power</p>
+                            </div>
+                            <div class="weight-card">
+                                <h5>5U (75-79g)</h5>
+                                <p>Doubles/Defensive Singles - Faster swing speeds</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="balance-types">
+                        <h4>Balance Types</h4>
+                        <div class="balance-grid">
+                            <div class="balance-card">
+                                <h5>Head Heavy</h5>
+                                <p>Power attacking, back court players. Increased smash and clear power.</p>
+                            </div>
+                            <div class="balance-card">
+                                <h5>Even Balance</h5>
+                                <p>All-round versatile style. Power at back, speed at front.</p>
+                            </div>
+                            <div class="balance-card">
+                                <h5>Head Light</h5>
+                                <p>Fast reactions, defensive shots, doubles play.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="equipment-category" data-category="shuttlecocks">
+                    <h3>🏸 Shuttlecocks</h3>
+                    <div class="shuttlecock-comparison">
+                        <div class="comparison-grid">
+                            <div class="comparison-card">
+                                <h4>Feather Shuttlecocks</h4>
+                                <div class="pros-cons">
+                                    <div class="pros">
+                                        <h5>Pros:</h5>
+                                        <ul>
+                                            <li>Better flight stability</li>
+                                            <li>Professional tournament standard</li>
+                                            <li>Superior trajectory</li>
+                                            <li>Authentic feel</li>
+                                        </ul>
+                                    </div>
+                                    <div class="cons">
+                                        <h5>Cons:</h5>
+                                        <ul>
+                                            <li>More expensive</li>
+                                            <li>Fragile</li>
+                                            <li>Weather sensitive</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p><strong>Best for:</strong> Professional players, tournaments, experienced players</p>
+                            </div>
+                            
+                            <div class="comparison-card">
+                                <h4>Synthetic Shuttlecocks</h4>
+                                <div class="pros-cons">
+                                    <div class="pros">
+                                        <h5>Pros:</h5>
+                                        <ul>
+                                            <li>Durable</li>
+                                            <li>Cost-effective</li>
+                                            <li>Weather resistant</li>
+                                            <li>Consistent</li>
+                                        </ul>
+                                    </div>
+                                    <div class="cons">
+                                        <h5>Cons:</h5>
+                                        <ul>
+                                            <li>Different flight pattern</li>
+                                            <li>Less authentic feel</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p><strong>Best for:</strong> Beginners, casual play, training, outdoor courts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="equipment-category" data-category="shoes">
+                    <h3>👟 Badminton Shoes</h3>
+                    <div class="shoe-features">
+                        <h4>Essential Features</h4>
+                        <ul class="feature-list">
+                            <li>Non-marking sole (essential for indoor courts)</li>
+                            <li>Cushioning for shock absorption during jumps</li>
+                            <li>Lateral support for side-to-side movements</li>
+                            <li>Lightweight design (250g-330g)</li>
+                            <li>Good grip and traction</li>
+                            <li>Flexibility for quick direction changes</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="top-brands">
+                        <h4>Top Recommendations</h4>
+                        <div class="brand-grid">
+                            <div class="brand-card">
+                                <h5>Yonex Power Cushion Series</h5>
+                                <p>Superior shock absorption</p>
+                            </div>
+                            <div class="brand-card">
+                                <h5>Yonex Aerus Series</h5>
+                                <p>Lightweight for rapid footwork</p>
+                            </div>
+                            <div class="brand-card">
+                                <h5>Victor A970Ace</h5>
+                                <p>Best all-around performance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="section" id="blog">
+        <div class="container">
+            <h2 class="section__title">Training Blog</h2>
+            <p class="section__subtitle">Expert tips, training guides, and insights for improving your badminton game</p>
+            
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <h3>5 Essential Badminton Techniques Every Beginner Must Master</h3>
+                    <p class="blog-meta">September 3, 2025 • Training Tips</p>
+                    <p>Learn the fundamental techniques that form the foundation of excellent badminton play...</p>
+                    <a href="#" class="btn btn--secondary btn--sm">Read More</a>
+                </article>
+                
+                <article class="blog-card">
+                    <h3>Advanced Footwork Patterns for Court Domination</h3>
+                    <p class="blog-meta">September 2, 2025 • Advanced Techniques</p>
+                    <p>Master complex footwork patterns to improve your court coverage and reaction time...</p>
+                    <a href="#" class="btn btn--secondary btn--sm">Read More</a>
+                </article>
+                
+                <article class="blog-card">
+                    <h3>Mental Strategies: Staying Focused During Long Rallies</h3>
+                    <p class="blog-meta">September 1, 2025 • Mental Game</p>
+                    <p>Develop the mental toughness needed to maintain focus and composure during intense matches...</p>
+                    <a href="#" class="btn btn--secondary btn--sm">Read More</a>
+                </article>
+                
+                <article class="blog-card">
+                    <h3>Strength Training Exercises for Badminton Players</h3>
+                    <p class="blog-meta">August 31, 2025 • Fitness</p>
+                    <p>Targeted exercises to build the specific strength and power needed for badminton excellence...</p>
+                    <a href="#" class="btn btn--secondary btn--sm">Read More</a>
+                </article>
+                
+                <article class="blog-card">
+                    <h3>How to Choose the Right String Tension</h3>
+                    <p class="blog-meta">August 30, 2025 • Equipment Guide</p>
+                    <p>Understanding string tension and how it affects your play style and shot precision...</p>
+                    <a href="#" class="btn btn--secondary btn--sm">Read More</a>
+                </article>
+                
+                <article class="blog-card">
+                    <h3>Tournament Preparation: Pre-Game Routines</h3>
+                    <p class="blog-meta">August 29, 2025 • Competition</p>
+                    <p>Develop effective pre-game routines to maximize your performance in competitive matches...</p>
+                    <a href="#" class="btn btn--secondary btn--sm">Read More</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="section section--alt" id="news">
+        <div class="container">
+            <h2 class="section__title">Latest Badminton News</h2>
+            <p class="section__subtitle">Stay updated with the latest developments in the badminton world</p>
+            
+            <div class="news-filters">
+                <button class="filter-btn active" data-filter="all">All News</button>
+                <button class="filter-btn" data-filter="tournaments">Tournaments</button>
+                <button class="filter-btn" data-filter="players">Player Updates</button>
+                <button class="filter-btn" data-filter="equipment">Equipment News</button>
+            </div>
+            
+            <div class="news-grid">
+                <article class="news-card" data-category="tournaments">
+                    <div class="news-badge">BWF Tournament</div>
+                    <h3>All England Open 2025: Defending Champions Ready for Title Defense</h3>
+                    <p class="news-meta">September 3, 2025 • BWF News</p>
+                    <p>The world's top players prepare for the prestigious All England Open Championships...</p>
+                    <a href="#" target="_blank" class="btn btn--outline btn--sm">Read Full Article</a>
+                </article>
+                
+                <article class="news-card" data-category="players">
+                    <div class="news-badge">Player Rankings</div>
+                    <h3>Viktor Axelsen Maintains World No. 1 Ranking</h3>
+                    <p class="news-meta">September 2, 2025 • BWF Rankings</p>
+                    <p>The Danish star continues his dominance at the top of men's singles rankings...</p>
+                    <a href="#" target="_blank" class="btn btn--outline btn--sm">Read Full Article</a>
+                </article>
+                
+                <article class="news-card" data-category="tournaments">
+                    <div class="news-badge">Olympic News</div>
+                    <h3>Paris 2024 Olympic Badminton Review and Analysis</h3>
+                    <p class="news-meta">September 1, 2025 • Olympic Coverage</p>
+                    <p>Comprehensive review of the thrilling badminton competitions at Paris 2024...</p>
+                    <a href="#" target="_blank" class="btn btn--outline btn--sm">Read Full Article</a>
+                </article>
+                
+                <article class="news-card" data-category="equipment">
+                    <div class="news-badge">Technology</div>
+                    <h3>Revolutionary Racket Technology Debuts at Major Tournament</h3>
+                    <p class="news-meta">August 31, 2025 • Equipment Innovation</p>
+                    <p>New carbon fiber innovations promise to change the game for professional players...</p>
+                    <a href="#" target="_blank" class="btn btn--outline btn--sm">Read Full Article</a>
+                </article>
+                
+                <article class="news-card" data-category="players">
+                    <div class="news-badge">Junior Development</div>
+                    <h3>Rising Stars: Young Players Making Their Mark on International Scene</h3>
+                    <p class="news-meta">August 30, 2025 • Youth Development</p>
+                    <p>Spotlight on promising junior players who are quickly rising through the ranks...</p>
+                    <a href="#" target="_blank" class="btn btn--outline btn--sm">Read Full Article</a>
+                </article>
+                
+                <article class="news-card" data-category="tournaments">
+                    <div class="news-badge">Championship</div>
+                    <h3>World Championships 2025: Tournament Schedule Announced</h3>
+                    <p class="news-meta">August 29, 2025 • BWF Championships</p>
+                    <p>The BWF World Championships schedule has been released with exciting match-ups...</p>
+                    <a href="#" target="_blank" class="btn btn--outline btn--sm">Read Full Article</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>Funmintom</h3>
+                    <p>Your ultimate guide to everything badminton</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#strategies">Strategies</a></li>
+                            <li><a href="#history">History</a></li>
+                            <li><a href="#rules">Rules</a></li>
+                            <li><a href="#equipment">Equipment</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__section">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#blog">Training Blog</a></li>
+                            <li><a href="#news">Latest News</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Funmintom. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
