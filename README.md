@@ -61,9 +61,13 @@ Or deploy to [GitHub Pages](https://pages.github.com/) for public hosting.
 ## Project Structure
 
 funmintom.com/
+
 ├── index.html # Main homepage
+
 ├── style.css # CSS for layout & responsive design
+
 ├── app.js # JavaScript for navigation, search, filters
+
 └── README.md # Project documentation
 
 
